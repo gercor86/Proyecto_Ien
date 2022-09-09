@@ -21,11 +21,11 @@
         
         <h2>{{objeto.nombre}}</h2>
         <h3>Tipo: {{objeto.tipo}}</h3>
-    
+        <a href="{% url 'actualizar_receta' objeto.pk %}" >actualizar {{objeto.nombre}}</a><br><br>
     {% endfor %}
     
     <div>
-        <a href="{% url 'actualizar_receta'  objeto.pk % }" ><button class = "button7">Actulizar Receta</button></a><br><br>
+        
         <a href="{% url 'bizcochuelo' %}"><button class = "button4">Ver receta de Bizcochuelo</button></a>
         <a href="{% url 'pionono' %}"><button class = "button5">Ver receta de Pionono</button></a>
         <a href="{% url 'pan_campo' %}"><button class = "button8">Ver receta Pan de Campo</button></a>
