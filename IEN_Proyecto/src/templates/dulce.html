@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Recetas</title>
+</head>
+<body>
+    <h1 class = 'centrar'> Recetas</h1>
+
+    <div>
+    <a href="{% url 'base' %}"><button class = "button3"> Volver al inicio</button></a><br><br>
+        
+    </div>
+    
+    {% for objeto in dulce_lista %}
+        
+        <h2>{{objeto.nombre}}</h2>
+        <h3>Tipo: {{objeto.tipo}}</h3>
+    
+    {% endfor %}
+    
+    <div>
+        <a href="{% url 'actualizar_receta'  objeto.pk % }" ><button class = "button7">Actulizar Receta</button></a><br><br>
+        <a href="{% url 'bizcochuelo' %}"><button class = "button4">Ver receta de Bizcochuelo</button></a>
+        <a href="{% url 'pionono' %}"><button class = "button5">Ver receta de Pionono</button></a>
+        <a href="{% url 'pan_campo' %}"><button class = "button8">Ver receta Pan de Campo</button></a>
+    </div>
+
+</body>
+</html>

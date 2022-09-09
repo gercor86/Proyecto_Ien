@@ -1,0 +1,62 @@
+.button { 
+    background-color: rgba(93, 6, 255, 0.582);
+    color: white;
+    font-weight: 900;
+}
+
+.button2 {
+    background-color: rgb(13, 120, 128);
+    color : white;
+    font-weight: 900;
+}
+
+.button3 {
+    background-color: rgb(184, 179, 117);
+    color : white;
+    font-weight: 900;
+}
+
+.button4 {
+    background-color: chocolate;
+    color : white;
+    font-weight: 900;
+}
+
+.button5 {
+    background-color: rgb(210, 30, 171);
+    color : white;
+    font-weight: 900;
+}
+
+.button6 {
+    background-color: brown;
+    color : white;
+    font-weight: 900;
+}
+
+.button7 {
+    background-color: black;
+    color : white;
+    font-weight: 900;
+}
+
+.button8 {
+    background-color: darkgoldenrod;
+    color : white;
+    font-weight: 900;
+}
+
+.centrar-elementos{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body{
+    background-color: lightblue;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+

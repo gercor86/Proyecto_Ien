@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Pan de campo</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class = "centrar">Pan de campo</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+      </ul>
+
+    <p><strong>Pan de campo</strong></p>
+
+    <table style="width: 500px;">
+        <thead>
+            <tr>
+                <th >Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>    
+        <tr>
+            <th class = "centrar">Esponja</th>
+        </tr>
+
+        <tr>
+            <td>150gr</td>
+            <td>Harina 000</td>
+        </tr>
+
+        <tr>
+            <td>90ml</td>
+            <td>Agua</td>           
+        </tr>
+
+        <tr>
+            <td>25gr</td>
+            <td>Levadura</td>
+        </tr>
+
+        <tr>
+            <th class = "centrar"> Amasijo</th>
+        </tr>
+
+        <tr>
+            <td> 350gr</td>
+            <td>Harina 0000</td>
+        </tr>
+    </table>
+
+</body>
+</html>

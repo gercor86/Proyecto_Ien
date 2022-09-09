@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Pionono</title>
+</head>
+<body>
+    {% block contenido %}
+
+    <h1 class = 'centrar'> Pionono </h1>
+
+    <div>
+        <a href="{% url 'base' %}"><button class = "button3"> Volver al inicio</button></a><br><br>
+        <a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a recetas dulce</button></a>    
+    </div>
+        
+        <h3><strong> Plancha de piononó base </strong></h3>
+
+            <p> 1 plancha de silpat de 30 X 20cm</p>
+            <p> 1 placa de la misma medida</p>
+
+        <h3><strong> Ingredientes </strong></h3>
+
+        <p>
+            <ul>
+                <li>3 unidades de huevos.</li>
+                <li>30gr de azúcar.</li>
+                <li>5gr de miel.</li>
+                <li>35gr de harina.</li>
+                <li>Gotas de vainilla</li>
+
+            </ul>
+
+        </p>
+
+        <h3><strong> Preparación </strong></h3>
+        
+        <p> 
+            <ul>
+            
+                <li>Precalentar el horno a 200°.</li>
+                <li>Colocar en un bol de la batidora los huevos, azúcar y esencia de vainilla.</li>
+                <li>Batir a punto blanco, agregar la miel.</li>
+                <li>Deter la marcha de la maquina.</li>
+                <li>Tamizar la harina y mezclar en forma envolvente con la pasta de huevos.</li>
+                <li>Distribuir la pasta sobre la placa.</li>
+                <li>Llevar al horno, cocinar durante 6 minutos.</li>
+        
+            </ul>      
+        </p>
+
+        
+    {%endblock%}
+
+</body>
+</html>
