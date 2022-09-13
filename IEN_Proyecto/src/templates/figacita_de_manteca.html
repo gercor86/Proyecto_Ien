@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Figacita de Manteca</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+      <h1 class = "centrar"> Figacita de Manteca</h1> 
+      
+      <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+      </ul>
+
+      <p><strong>Figacita de Manteca</strong></p>
+
+      <table style = "width: 500px;">
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead> 
+            
+        <tr>
+            <th>500gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>250cc</th>
+            <th>Leche tibia</th>
+        </tr>
+
+        <tr>
+            <th>25gr</th>
+            <th>Levadura</th>
+        </tr>
+
+        <tr>
+            <th>10gr</th>
+            <th>Sal Fina</th>
+        </tr>
+
+        <tr>
+            <th>100cc</th>
+            <th>Agua</th>
+        </tr>
+
+        <tr>
+            <th>50gr</th>
+            <th>Manteca a punto pomada</th>
+        </tr>
+      </table>
+
+      <br>
+      <br>
+
+      <h3>Elaboración</h3>
+      
+    <ul>      
+        <li>Hacer una esponja con 150gr de harina, 100cc de agua y 25 de levadura.</li>
+        
+        <li>Trabajar el resto de los ingredientes hasta lograr una masa suave.</li>
+        
+        <li>Tapar con un nailon y dejar descansar 20 minutos.</li>
+        
+        <li>Desagasificar y estirar la masa de 1/2cm de espesor.</li>
+        
+        <li>Cortar las piezas con cortante N°7 o N°8. Fermentar hasta duplicar su tamaño.</li>
+        
+        <li>Pintar con huevo batido.</li>
+        
+        <li>Cocinar a 190°C durante 12 a 15 minutos.</li>
+    
+        <li>Cuando salen del horno se puede pintar con la manteca, esta opción  puede ser descartada.</li>
+
+    </ul>
+
+</body>
+</html>

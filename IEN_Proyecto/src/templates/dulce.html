@@ -13,23 +13,46 @@
     <h1 class = 'centrar'> Recetas</h1>
 
     <div>
-    <a href="{% url 'base' %}"><button class = "button3"> Volver al inicio</button></a><br><br>
+        <a href="{% url 'base' %}"><button class = "button3"> Volver al inicio</button></a><br><br>
         
     </div>
-    
-    {% for objeto in dulce_lista %}
-        
-        <h2>{{objeto.nombre}}</h2>
-        <h3>Tipo: {{objeto.tipo}}</h3>
-        <a href="{% url 'actualizar_receta' objeto.pk %}" >actualizar {{objeto.nombre}}</a><br><br>
-    {% endfor %}
     
     <div>
+
+        {% for objeto in dulce_lista %}
         
-        <a href="{% url 'bizcochuelo' %}"><button class = "button4">Ver receta de Bizcochuelo</button></a>
-        <a href="{% url 'pionono' %}"><button class = "button5">Ver receta de Pionono</button></a>
-        <a href="{% url 'pan_campo' %}"><button class = "button8">Ver receta Pan de Campo</button></a>
+            <h2>{{objeto.nombre}}</h2>
+            <h3>Tipo: {{objeto.tipo}}</h3>
+            <a href="{% url 'actualizar_receta' objeto.pk %}" ><button class = "button6">Actualizar {{objeto.nombre}} </button></a><br><br>
+            <a href="{% url 'eliminar_receta' objeto.pk %}" ><button class = "button4">Eliminar {{objeto.nombre}} </button></a><br><br>
+
+        {% endfor %}
+
+    
+    <hr>
+
     </div>
 
+    <ul class="nav flex-column">
+    <div>
+        <li>
+            <a href="{% url 'bizcochuelo' %}"><button class = "button4">Ver receta de Bizcochuelo</button></a>
+        </li>
+        <br>
+        <li>
+        <a href="{% url 'pionono' %}"><button class = "button5">Ver receta de Pionono</button></a>
+        </li>
+        <br>
+        <li>
+        <a href="{% url 'pan_campo' %}"><button class = "button8">Ver receta Pan de Campo</button></a>
+        </li>
+        <br>
+        <li>
+            <a href="{% url 'figacita_manteca' %}"><button class = "button7">Ver receta de Figacita de Manteca</button></a>
+        </li>
+        <br>
+        <li><a href="{% url 'pan_viena' %}"><button class = "button6">Ver receta de Pan de Viena</button></a></li>
+    </div>
+    </ul>
 </body>
 </html>

@@ -63,13 +63,25 @@ class Receta3(CreateView):
     form_class = RecetaForm1
     success_url = reverse_lazy('receta_dulce')
 
-class lista_receta(ListView):
-    def get(self,request, *args, **kwargs):
-    
-        return render(request, 'listar_receta.html')
 
 class actualizar_receta(UpdateView):
     model = Dulce
     template_name = 'actualizar_receta.html'
     fields = ['nombre', 'tipo']
     success_url = reverse_lazy('receta_dulce')
+
+class eliminar_receta(DeleteView):
+    model = Dulce
+    template_name = 'eliminar_receta.html'
+    fields = ['nombre', 'tipo']
+    success_url = reverse_lazy('receta_dulce')
+
+class figacita_manteca(View):
+    def get(self, request, *args, **kwargs):
+        
+        return render(request, 'figacita_de_manteca.html')
+
+class pan_viena(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'pan_viena.html')

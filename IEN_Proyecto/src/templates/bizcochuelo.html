@@ -14,8 +14,15 @@
     <h1 class = 'centrar'> Bizcochuelo </h1>
 
     <div>
-        <a href="{% url 'base' %}"><button class = "button3"> Volver al inicio</button></a><br><br>
-        <a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a recetas dulce</button></a>    
+        <ul>
+            <li>
+            <a href="{% url 'base' %}"><button class = "button3"> Volver al inicio</button></a>
+            </li>
+            <br>
+            <li>
+            <a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a Recetas</button></a>
+            </li>
+        </ul>    
     </div>
         
         <h3><strong> Bizcochuelo Base </strong></h3>

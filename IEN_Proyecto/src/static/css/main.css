@@ -35,7 +35,7 @@
 }
 
 .button7 {
-    background-color: black;
+    background-color: rgb(57, 112, 40);
     color : white;
     font-weight: 900;
 }
@@ -52,7 +52,7 @@
 }
 
 body{
-    background-color: lightblue;
+    background-color: rgb(117, 187, 245);
 }
 
 .centrar{
