@@ -1,0 +1,134 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Pan de Salvado</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class = "centrar"> Pan de Salvado</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+    </ul>
+    <br>
+    <p><strong>Pan de salvado</strong></p>
+
+    <table style = "width: 500px;">
+
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>Esponja</th>
+        </tr>
+
+        <tr>
+            <th>150gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>90cc</th>
+            <th>Agua</th>
+        </tr>
+
+        <tr>
+            <th>25gr</th>
+            <th>Levadura</th>
+        </tr>
+
+        <tr>
+            <th>Amasijo</th>
+        </tr>
+
+        <tr>
+            <th>250gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>50gr</th>
+            <th>Salvado</th>
+        </tr>
+
+        <tr>
+            <th>240cc</th>
+            <th>Agua</th>
+        </tr>
+
+        <tr>
+            <th>20gr</th>
+            <th>Azúcar Negra</th>
+        </tr>
+
+        <tr>
+            <th>15gr</th>
+            <th>Extracto de malta</th>
+        </tr>
+
+        <tr>
+            <th>10gr</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>50gr</th>
+            <th>Manteca (Hecha pomada)</th>
+        </tr>
+
+    </table>
+
+    <h3>Elaboración</h3>
+    <h3>Esponja:</h3>
+
+    <ul>
+        <li>Colocar en un bol la harina, la levadura y amasar hasta que se unan <br>
+        bien todo los ingredientes, no hace falta darle mucho trabajo.</li>
+        <br>
+        <li>Poner la masa dentro de una bolsa de nailon y colocarla en un recipiente <br>
+        con agua a 36°C para que se fermente hasta el doble de su volumen.</li>
+        <br>
+    </ul>
+
+    <h3>Amasijo:</h3>
+
+    <ul>
+        <li>Hacer una corona grande con la harina y el salvado y colocar dentro <br>
+        el resto de los ingredientes.</li>
+        <br>
+        <li>Mezclarlos en el centro de la misma y evitar romper la corona para <br>
+        que no se salga el agua.</li>
+        <br>
+        <li>Una vez integrados todos los ingredientes agregar la esponja ya fermentada.</li>
+        <br>
+        <li>Amasar hasta lograr una masa sedosa y suave, dejar descansar durante <br>
+        15 minutos.</li>
+        <br>
+        <li>Luego desgasificar y dar la forma deseada, colocar en molde o placa, previamente enmantecada.</li>
+        <br>
+        <li>Dejar levar, hasta que llegue al doble de su volumen.</li>
+        <br>
+        <li>Cocinar a 190°C durante 20 a 25 minutos.</li>
+        <br>
+        <li>Cuando sale del horno se puede pintar con partes igaules de agua y <br>
+        huevo para darle brillo o con manteca derretida.</li>
+        </ul>

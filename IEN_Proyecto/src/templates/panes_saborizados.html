@@ -1,0 +1,212 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Panes Saborizados</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class = "centrar">Panes Saborizados</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+      </ul>
+
+    <h3>Panes saborizados</h3>
+
+      <table style = "width:500px;">
+
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>Esponja</th>
+        </tr>
+
+        <tr>
+            <th>150gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>90cc</th>
+            <th>Agua</th>
+        </tr>
+
+        <tr>
+            <th>25gr</th>
+            <th>Levadura</th>
+        </tr>
+
+        <tr>
+            <th>Amasijo</th>
+        </tr>
+
+        <tr>
+            <th>350gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>170cc</th>
+            <th>Agua</th>
+        </tr>
+        
+        <tr>
+            <th>12gr</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>10gr</th>
+            <th>Extraco de Malta</th>
+        </tr>
+
+        <tr>
+            <th>25gr</th>
+            <th>Manteca (Hecha pomada)</th>
+        </tr>
+
+        <tr>
+            <th>Cantidad necesaria</th>
+            <th>Del sabor que desea</th>
+        </tr>
+      </table>
+
+      <h3>Elaboración artesanal</h3>
+      <h3>Esponja:</h3>
+
+      <ul>
+        <li>Colocar en un bol la harina, el agua y la levadura y amasar hasta que <br>
+        se unan bien todos los ingredientes, no hace falta darle mucho trabajo.</li>
+        <br>
+        <li>Poner la masa dentro de un bolsa de nailon y colocarla en un recipiente <br>
+        con agua a 36°C para que fermente hasta el doble de su volumen.</li>
+        <br>
+      </ul>
+      <h3>Amasijo</h3>
+
+      <ul>
+        <li>Hacer una corona con la harina y colocar dentro el resto de los ingredientes.</li>
+        <br>
+        <li>Mezclarlos en el centro de la misma y evitar romper la corona para que no se <br>
+        salga el agua. </li>
+        <br>
+        <li>Una vez integrados todos los ingredientes agregar la esponja ya fermentada.</li>
+        <br>
+        <li>Amasar hasta lograr una masa sedosa y suave, dejar descansar durante 15 minutos <br>
+        (1° leudado)</li>
+        <br>
+        <li>Desgasificar e incorporar el sabor hasta que se integre bien, luego cortar <br>
+        piezas de 30 a 35 gr.</li>
+        <br>
+        <li>Bollarlas y estibarlas en lata enmantecadas, dejar fermentar hasta que llegue <br>
+        al doble de su volumen.</li>
+        <br>
+        <li>Cocinar a 190°C durante 15 a 20 minutos con vapor.</li>
+        <br>
+        <li>Cuando salen del horno se puede pintar con un huevo batido para darle brillo <br>
+        a los panes.</li>
+      </ul>
+
+      <h3>Los diferentes sabores puede ser:</h3>
+
+      <table style = "width: 500px;">
+
+        <thead>
+            <tr>
+                <th>Sabores</th>
+                <th>Gramos</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>Morrón</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>Quéso</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>Acelga</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>Zanahoria</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>Jamón</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>Panceta</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>Remolacha</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>Aceitunas</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>Cebolla</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>Orégano</th>
+            <th>10</th>
+        </tr>
+
+        <tr>
+            <th>Salame</th>
+            <th>200</th>
+        </tr>
+
+        <tr>
+            <th>ajo deshidratado</th>
+            <th>8</th>
+        </tr>
+      </table>
+
+      <ul>
+        <li>Los sabores se pican chicos.</li>
+        <br>
+        <li>Queso, Zanahoria, Remolacha, se pasan por rallador.</li>
+        <br>
+        <li>Estos gramos se usan, si lo insumos son naturales y sin esencias.</li>
+        <br>
+        <li>Los sabores se pueden combinar entre si.</li>
+      </ul>
+</body>
+</html>

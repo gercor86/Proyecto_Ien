@@ -85,3 +85,18 @@ class pan_viena(View):
     def get(self, request, *args, **kwargs):
 
         return render(request, 'pan_viena.html')
+
+class bizcochito_grasa(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'bizcochitos_grasa.html')
+
+class pan_salvado(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'pan_salvado.html')
+
+class panes_saborizados(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'panes_saborizados.html')

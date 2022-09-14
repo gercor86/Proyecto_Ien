@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Bizcochitos de grasa</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class = "centrar"> Bizcochitos de grasa</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+    </ul>
+    <br>
+    <p><strong>Bizcochitos de grasa</strong></p>
+
+    <table style = "width: 500px;">
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead> 
+
+        <tr>
+            <th>500gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>150gr</th>
+            <th>Grasa pomada</th>
+        </tr>
+
+        <tr>
+            <th>20gr</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>20gr</th>
+            <th>Levadura</th>
+        </tr>
+
+        <tr>
+            <th>250cc - 300cc</th>
+            <th>Agua tibia</th>
+        </tr>
+
+    </table>
+
+    <p><strong>Elaboración</strong></p>
+
+    <ul>
+        <li>Formar con la harina una corona. Disolver con agua la sal</li>
+        <br>
+        <li>Añadir todos los ingredientes, la grasa solo la mitad, amasar hasta que quede una masa elástica.</li>
+        <br>
+        <li>Dejar descansar 15 a 30 minutos (hasta que la masa comience a levar)</li>
+        <br>
+        <li>Estirar a 1/2cm. Pincelar con el resto de la grasa y realizar dos vueltas simples. <br>
+        Estirar nuevamente de lismo espesor, picar y cortar en cuadrados de 2cm por lado. <br>
+        Poner en latas (sin enmantecar)</li>
+        <br>
+        <li>Dejar levar 10 minutos y cocinar a horno a 200°C, durante 10 a 12 minutos.</li>
+    </ul>
+
+
+</body>
+</html>
