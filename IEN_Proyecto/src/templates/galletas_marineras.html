@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Galletas Marineras</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class = "centrar">Galletas Marineras</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+      </ul>
+
+      <head></head>
+
+      <h3>Galletas Marineras</h3>
+
+      <table style = "width:500px;">
+            <thead>
+                <tr>
+                    <th>Gramaje</th>
+                    <th>Ingredientes</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <th>500gr</th>
+                <th>Harina 000</th>
+            </tr>
+
+            <tr>
+                <th>250cc</th>
+                <th>Agua</th>
+            </tr>
+
+            <tr>
+                <th>20gr</th>
+                <th>Levadura</th>
+            </tr>
+
+            <tr>
+                <th>12gr</th>
+                <th>Sal</th>
+            </tr>
+
+            <tr>
+                <th>5gr</th>
+                <th>Extracto de malta</th>
+            </tr>
+
+            <tr>
+                <th>15gr</th>
+                <th>Margarina o Grasa (hecha pomada)</th>
+            </tr>
+
+      </table>
+
+      <h3>Elaboración:</h3>
+
+      <ul>
+        <li>Mezclar todos los ingredientes hasta obtener una masa homogenea.</li>
+        <br>
+        <li>Dar 15 vueltas de sobadora y dejar descansar 15 minutos.</li>
+        <br>
+        <li>Desgasificar, estirar y cortar piezas de 20gr. Colocarlas <br>
+        ordenadamente sobre una mesa aceitada.</li>
+        <br>
+        <li>Dejar descansar por un espacio de 10 minutos</li>
+        <br>
+        <li>Estirar sobre la mesa aceitada con palote dando forma redonda y un <br>
+        espesor de 0,5mm. También se las puede realizar cuadradas.</li>
+        <br>
+        <li>Estibar sobre latas espolvoreadas con harina de maiz, dejar <br>
+        fermentar a 30°C.</li>
+        <br>
+        <li>Picar bien, espolvorear por arriba con harina de maiz.</li>
+        <br>
+        <li>Cocinar a 170°C sin vapor durante 25 a 30 minutos aproximadamente.</li>
+
+      </ul>
+
+
+</body>
+</html>

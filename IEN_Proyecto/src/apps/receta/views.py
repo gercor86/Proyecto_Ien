@@ -100,3 +100,18 @@ class panes_saborizados(View):
     def get(self, request, *args, **kwargs):
 
         return render(request, 'panes_saborizados.html')
+
+class galletas_marineras(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'galletas_marineras.html')
+
+class berlinesas_donas(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'berlinesas_donas.html')
+
+class grisines_tradiconales(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'grisines_tradicionales.html')

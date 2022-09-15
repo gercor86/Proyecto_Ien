@@ -1,0 +1,87 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Grisines Tradiciones</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class = "centrar">Grisines Tradicionales</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+      </ul>
+
+      <h3>Grisines Tradicionales</h3>
+
+    <table style= "width:500px;">
+        <thea>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingrdientes</th>
+            </tr>
+        </thea>
+
+        <tr>
+            <th>250gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>100cc</th>
+            <th>Agua</th>
+        </tr>
+
+        <tr>
+            <th>10gr</th>
+            <th>Levadura</th>
+        </tr>
+
+        <tr>
+            <th>5gr</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>5gr</th>
+            <th>Extracto de Malta</th>
+        </tr>
+
+        <tr>
+            <th>25gr</th>
+            <th>Manteca (hecha pomada)</th>
+        </tr>
+    </table>
+
+    <h3>Elaboración:</h3>
+
+    <ul>
+        <li>Realizar un fermento, formar una corona añadirlo junto a los demás <br>
+        ingredientes. Amasar hasta lograr una masa sedosa.</li>
+        <br>
+        <li>Dejar descansar por 15 minutos.</li>
+        <br>
+        <li>Cortar tiras finas y estirar hasta el largo de la lata, grosor de 5mm.</li>
+        <br>
+        <li>Estibar a lo largo de la lata enmantecada, dejando 1cm, entre cada <br>
+        tira. Dejar fermentar muy poco 10 a 15 minutos.</li>
+        <br>
+        <li>Cocinar a 200°C durante 10 a 13 minutos.</li>
+    </ul>
+    
+</body>
+</html>

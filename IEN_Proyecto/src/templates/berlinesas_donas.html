@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Berlinesas y Donas</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class = "centrar">Berlinesas y Donas</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'receta_dulce' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+      </ul>
+
+    <table style="width:500px;">
+    
+    <thead>
+        <tr>
+            <th>Gramaje</th>
+            <th>Ingredientes</th>
+        </tr>
+    </thead>
+
+        <tr>
+            <th>Esponja</th>
+        </tr>
+
+        <tr>
+            <th>150gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>100cc</th>
+            <th>Leche</th>
+        </tr>
+
+        <tr>
+            <th>15gr</th>
+            <th>Levadura</th>
+        </tr>
+
+        <tr>
+            <th>Amasijo</th>
+        </tr>
+
+        <tr>
+            <th>350gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>5gr</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>220cc</th>
+            <th>Leche</th>
+        </tr>
+
+        <tr>
+            <th>75gr</th>
+            <th>Azúcar</th>
+        </tr>
+
+        <tr>
+            <th>1 unidad</th>
+            <th>Huevo</th>
+        </tr>
+        
+        <tr>
+            <th>1/2gr</th>
+            <th>Ralladura de limon</th>
+        </tr>
+
+        <tr>
+            <th>Cantidad necesaria</th>
+            <th>Esencia de vainilla</th>
+        </tr>
+
+        <tr>
+            <th>50gr</th>
+            <th>Mantica</th>
+        </tr>
+
+    </table>
+
+    <h3>Elaboración</h3>
+    
+    <h3>Esponja:</h3>
+
+    <ul>
+        <li>Amasar la harina con la leche y la levadura.</li>
+        <br>
+        <li>Colocar en bolsa de nailon, dejar fermentar al doble de su volumen.</li>
+    </ul>
+
+    <h3>Amasijo:</h3>
+    
+    <ul>
+        <li>Hacer una corona con la harina.</li>
+        <br>
+        <li>Mezclar azúcar y liquidos.</li>
+        <br>
+        <li>Amasar bien. Por ultimo agregar la esponja y la manteca</li>
+        <br>
+        <li>Amasar hasta lograr una masa lisa y suave</li>
+        <br>
+        <li>Darle descanso durante 5 minutos.</li>
+        <br>
+        <li>BERLINESAS: hacer bollos de 35gr aproximadamente, dejar <br>
+        levar al doble y cocinar en aceite a 170°C aproximadamente <br>
+        ente 40 a 45 segundos de cada lado o hasta que este dorado de <br>
+        ambos lados.</li>
+        <br>
+        <li>DONAS: cortar anillos de 6cm aproximadamente. <br>
+        Dejar levar al doble y freir en aceite por espacio de <br>
+        40 a 45 segundos por lado. Pasar por azúcar.</li>
+    </ul>
+
+
+</body>
+</html>
