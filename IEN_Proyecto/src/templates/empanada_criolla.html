@@ -1,0 +1,73 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Masa de empanada criolla</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class = "centrar">Masa de empanada criolla</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+        <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'vista_receta' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+    </ul>
+
+    <h2>Masa de empanada criolla</h2>
+
+    <table style="width:500px;">
+
+        <thead>
+            <th>Gramaje</th>
+            <th>Ingredientes</th>
+        </thead>
+
+        <tr>
+            <th>250gr</th>
+            <th>Harina</th>
+        </tr>
+
+        <tr>
+            <th>5gr</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>75cc</th>
+            <th>Agua</th>
+        </tr>
+
+        <tr>
+            <th>75gr</th>
+            <th>Materia grasa, puede ser también aceite</th>
+        </tr>
+
+    </table>
+
+    <h3>Elaboración</h3>
+
+    <ul>
+        <li>Hacer una corona con los sólidos mezclados.</li>
+        <br>
+        <li>Colocar en el centro la materia grasa y amasarla con el agua.</li>
+        <br>
+        <li>Integrar al resto, llevar a frio.</li>
+        <br>
+        <li>Estirar con sobadora y cortar las tapas de 10 a 12cm de diametro.</li>
+    </ul>
+
+</body>
+</html>

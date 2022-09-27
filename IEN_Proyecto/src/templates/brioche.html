@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Masa Brioche</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class ="centrar">Masa de Brioche</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'vista_receta' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+    </ul>
+
+    <h2>Masa de Brioche</h2>
+
+    <h3>Para hacer la esponja:</h3>
+
+    
+
+    <table style="width:500px;">
+    
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>250gr</th>
+            <th>Harina</th>
+        </tr>
+
+        <tr>
+            <th>125cc</th>
+            <th>Huevo</th>
+        </tr>
+
+        <tr>
+            <th>20gr</th>
+            <th>Levadura</th>
+        </tr>
+
+    </table>
+
+    <h3>Para hacer el Amasijo:</h3>
+
+    <table style="width:500px;">
+
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>350gr</th>
+            <th>Harina</th>
+        </tr>
+
+        <tr>
+            <th>125cc</th>
+            <th>Huevo</th>
+        </tr>
+
+        <tr>
+            <th>50gr</th>
+            <th>Azúcar</th>
+        </tr>
+
+        <tr>
+            <th>Cantidad necesaria</th>
+            <th>Leche</th>
+        </tr>
+
+        <tr>
+            <th>250gr</th>
+            <th>Manteca</th>
+        </tr>
+
+        <tr>
+            <th>10gr</th>
+            <th>Sal</th>
+        </tr>
+
+    </table>
+
+
+    <h3>Pasos para la elaboración.</h3>
+
+    <ul>
+        <li>Hacer una esponja con el huevo, la levadura y la harina.</li>
+        <br>
+        <li>Cuándo la esponja tenga su doble volumen, amasar con la leche, <br>
+        los huevos, la sal, el azúcar y el resto de la harina.</li>
+        <br>
+        <li>Cuando la masa tome cuerpo y tenga textura lisa y suave.</li>
+        <br>
+        <li>Incorporar la manteca blanda en forma de pomada, seguir mezclando <br>
+        hasta que se integre por completo.</li>
+        <br>
+        <li>Dejar leudar, tapada con nailon, dejar descansar 10 a 15 minutos.</li>
+        <br>
+        <li>Retirar el nailon, cortar bollos de 40gr y 15gr para la cabecita.</li>
+        <br>
+        <li>Bollar, poner en bandejas enmantecadas y poner el bollito de (15gr) <br>
+        en forma de gota sobre el bollo y a la vez presionar para hacar un hoyo <br>
+        en el bollo, e incorporar el bollito.</li>
+        <br>
+        <li>Hacer una leve presión en todas las piezas para que queden parejos. <br>
+        Dejar fermentar hasta el doble de su tamaño.</li>
+        <br>
+        <li>Cocinar a 170°C en el horno, por 10 minutos aproximandamente.</li>
+    </ul>
+
+    <h3>Nota:</h3>
+
+    <p>Para que la masa se puede decir Brioche, debe tener 50% de huevo y <br>
+    desde el 50% para arriba de manteca, con relación a la harina.</p>
+
+</body>
+</html>

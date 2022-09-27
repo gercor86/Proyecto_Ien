@@ -76,6 +76,11 @@ class eliminar_receta(DeleteView):
     fields = ['nombre', 'tipo']
     success_url = reverse_lazy('receta_dulce')
 
+class vista_receta(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'vista_receta.html')
+
 class figacita_manteca(View):
     def get(self, request, *args, **kwargs):
         
@@ -115,3 +120,38 @@ class grisines_tradiconales(View):
     def get(self, request, *args, **kwargs):
 
         return render(request, 'grisines_tradicionales.html')
+
+class pan_de_leche_miguelitos(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'pan_de_leche_miguelitos.html')
+
+class medialunas_saladas_manteca(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'medialunas_saladas_manteca.html')
+
+class facaccia_rellena(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request,'facaccia_rellena.html')
+
+class pizza(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'pizza.html')
+
+class brioche(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'brioche.html')
+
+class empanada_carne(View):
+    def get(set, request, *args, **kwargs):
+
+        return render(request, 'empanada_carne.html')
+
+class empanada_criolla(View):
+    def get(self, request, *args, **kwargs):
+
+        return render(request, 'empanada_criolla.html')

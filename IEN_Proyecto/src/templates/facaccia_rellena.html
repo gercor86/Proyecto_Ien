@@ -1,0 +1,134 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Facaccia Rellena</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class = 'centrar'>Facaccia Rellena</h1>
+
+    <div>
+        <ul>
+            <li>
+            <a href="{% url 'base' %}"><button class = "button3"> Volver al inicio</button></a>
+            </li>
+            <br>
+            <li>
+            <a href="{% url 'vista_receta' %}" ><button class = "button2">Volver a Recetas</button></a>
+            </li>
+        </ul>    
+    </div>
+
+    <h3>Facaccia rellena</h3>
+
+    <table style = "width: 500px;">
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>250gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>90cc</th>
+            <th>Leche</th>
+        </tr>
+
+        <tr>
+            <th>50cc</th>
+            <th>Agua</th>
+        </tr>
+
+        <tr>
+            <th>5gr (1 cdita)</th>
+            <th>Azúcar</th>
+        </tr>
+
+        <tr>
+            <th>20gr</th>
+            <th>Manteca</th>
+        </tr>
+
+        <tr>
+            <th>10cc</th>
+            <th>Aciete de Oliva</th>
+        </tr>
+
+        <tr>
+            <th>6gr (1cdita)</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>1 Pizca</th>
+            <th>Pimienta</th>
+        </tr>
+
+        <tr>
+            <th>15gr</th>
+            <th>Levadura</th>
+        </tr>
+
+    </table>
+
+    <h3>Elaboración:</h3>
+    <h3>Esponja:</h3>
+
+    <ul>
+        <li>Hacer el fermento dislviendo la levadura con el agua, <br>
+        y añadiendole un par de cucharadas de harina, debe quedar <br>
+        cremoso.</li>
+    </ul>
+
+    <h3>Amasijo:</h3>
+
+    <ul>
+        <li>Amasar todo junto hasta lograr una masa lisa y suave.</li>
+        <br>
+        <li>Bollar y dejar descansar 10 minutos.</li>
+        <br>
+        <li>Estirar la masa en forma rectangular.</li>
+        <br>
+        <li>Colocar el relleno y doblar en tres partes.</li>
+        <br>
+        <li>Dejar levar, hasta que duplique su volumen.</li>
+        <br>
+        <li>Cocinar entre 210°C - 220°C, durante 12 - 15 minutos.</li>
+    </ul>
+
+    <h3>Rellenos</h3>
+
+    <p>Los rellenos pueden ser  los siguentes: </p>
+
+    <ul>
+        <li>Chorizo colorado.</li>
+        <br>
+        <li>Jamón Cocido.</li>
+        <br>
+        <li>Panceta ahumada.</li>
+        <br>
+        <li>Aceitunas negras.</li>
+        <br>
+        <li>Aceitunas verdes.</li>
+        <br>
+        <li>Queso.</li>
+    </ul>
+
+</body>
+</html>

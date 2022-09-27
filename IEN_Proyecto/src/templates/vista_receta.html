@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Vista de Recetas</title>
+
+</head>
+<body>
+    
+    <h1 class = "centrar"> Vista Recetas</h1>
+
+    <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br><br>
+
+   
+
+    <ul class="nav flex-column">
+        <div>
+            <li>
+                <a href="{% url 'bizcochuelo' %}"><button class = "button4">Ver receta de Bizcochuelo</button></a>
+            </li>
+            <br>
+            <li>
+            <a href="{% url 'pionono' %}"><button class = "button5">Ver receta de Pionono</button></a>
+            </li>
+            <br>
+            <li>
+            <a href="{% url 'pan_campo' %}"><button class = "button8">Ver receta Pan de Campo</button></a>
+            </li>
+            <br>
+            <li>
+                <a href="{% url 'figacita_manteca' %}"><button class = "button7">Ver receta de Figacita de Manteca</button></a>
+            </li>
+            <br>
+            <li><a href="{% url 'pan_viena' %}"><button class = "button6">Ver receta de Pan de Viena</button></a></li>
+            <br>
+            <li><a href="{% url 'bizcochito_grasa' %}"><button class = "button5">Ver receta de Bizcohitos de grasa</button></a></li>
+            <br>
+            <li><a href="{% url 'pan_salvado' %}"><button class = "button4"> Ver receta de Pan de salvado</button></a></li>
+            <br>
+            <li><a href="{% url 'panes_sabores' %}"><button class = "button2"> Ver receta de Panes saborizados</button></a></li>
+            <br>
+            <li><a href="{% url 'galletas_marineras' %}"><button class = "button5"> Ver receta de Galletas Marineras</button></a></li>
+            <br>
+            <li><a href="{% url 'berlinesas_donas' %}"><button class = "button6">Ver receta de Berlinesas y Donas</button></a></li>
+            <br>
+            <li><a href="{% url 'grisines_tradicionales' %}"><button class = "button4">Ver receta de Grisines Tradicionales</button></a></li>
+            <br>
+            <li><a href="{% url 'pan_de_leche_miguelitos' %}"><button class = "button7">Ver receta de Pan de leche y Miguelitos</button></a></li>
+            <br>
+            <li><a href="{% url 'medialunas_saladas_manteca' %}"><button class = "button5">Ver receta de Medialunas Salada de Manteca</button></a></li>
+            <br>
+            <li><a href="{% url 'facaccia_rellena' %}"><button class = "button4">Ver receta de Faccacia Rellena</button></a></li>
+            <br>
+            <li><a href="{% url 'pizza' %}"><button class = "button7">Ver receta de Pizza</button></a></li>
+            <br>
+            <li><a href="{% url 'brioche' %}"><button class = "button6"> Ver receta de Masa de Brioche</button></a></li>
+            <br>
+            <li><a href="{% url 'empanada_carne' %}"><button class = "button2">Ver receta de Empanadas de Carne</button></a></li>
+            <br>
+            <li><a href="{% url 'empanada_criolla' %}"><button class = "button5">Ver Receta de Empanadas Criollas</button></a></li>
+        </div>
+        </ul>
+
+</body>
+</html>

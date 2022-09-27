@@ -1,0 +1,131 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Medialunas saladas de manteca</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class = "centrar">Medialunas Saladas de Manteca</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'vista_receta' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+    </ul>
+
+    <h3>Medialunas Saladas de manteca.</h3>
+
+    <table style = "width:500px;">
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>Amasijo</th>
+        </tr>
+
+        <tr>
+            <th>500gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>300cc</th>
+            <th>Leche</th>
+        </tr>
+
+        <tr>
+            <th>10gr</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>30gr</th>
+            <th>Azúcar</th>
+        </tr>
+
+        <tr>
+            <th>25gr</th>
+            <th>Levadura</th>
+        </tr>
+
+        <tr>
+            <th>Empaste</th>
+        </tr>
+
+        <tr>
+            <th>100gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>100gr</th>
+            <th>Margarita</th>
+        </tr>
+
+        <tr>
+            <th>100gr</th>
+            <th>Manteca</th>
+        </tr>
+
+    </table>
+
+    <h3>Elaboración.</h3>
+    <h3>Espanja:</h3>
+
+    <ul>
+        <li>Hacer una esponja con 150gr de harina, la levadura y 90cc de leche <br>
+        dejar duplicar su volumen.</li>
+    </ul>
+
+    <h3>Amasijo:</h3>
+
+    <ul>
+        <li>Con el resto de la harina hacer una corona y en su interior incorporar <br>
+        el resto de la harina (350gr), sal, azúcar, lecha y la esponja.</li>
+        <br>
+        <li>Mezclar, unir bien sin formar liga, dejar reposar 10 minutos.</li>
+    </ul>
+
+    <h3>Empaste:</h3>
+
+    <ul>
+        <li>Unir los insumos hasta formar una masa homogenea, dejar de forma <br>
+        rectacgular.</li> 
+        <br>  
+        <li>Desgasificar la masa, poner el empaste sobre el amasijo,<br>
+        estirar con palote y dar una vuelta simple.</li>
+        <br> 
+        <li>Llevar a frio por el  termino de 10 minutos. Repetir la operación. <br></li>
+        <br>
+        <li>Y por ultimo dar una vuelta doble.</li>
+        <br>
+        <li>Llevar al frio, luego estirar la masa a un espesor de 5mm.</li>
+        <br>
+        <li>De espesor y cortar triangulos de 15 a 18cm.</li>
+        <br>
+        <li>De un kilo de masa, salen 20 unidades.</li>
+        <br>
+        <li>Arrollar desde su base hace la punta sin harina, debe quedar <br>
+        firme, estibar en una placa enmantecada, dejar fermentar al doble, <br>
+        pintar con huevo batiado y hornear a 200°C 10 a 15 minutos.</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Empanadas de Carne</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class ="centrar">Empanadas de Carne</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+        <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'vista_receta' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+    </ul>
+
+    <h2>Empanadas de Carne</h2>
+
+    <h3>Para hacer el relleno.</h3>
+
+    <table style="width:500px;">
+        <thead>
+            <th>Gramaje</th>
+            <th>Ingredientes</th>
+        </thead>
+
+        <tr>
+            <th>250gr</th>
+            <th>Carne picada (magra)</th>
+        </tr>
+
+        <tr>
+            <th>1 unidad</th>
+            <th>Cebolla</th>
+        </tr>
+
+        <tr>
+            <th>50gr</th>
+            <th>Verdeo</th>
+        </tr>
+
+        <tr>
+            <th>Cantidad necesaria</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>Cantidad necesaria</th>
+            <th>Pimienta</th>
+        </tr>
+
+        <tr>
+            <th>2 unidades</th>
+            <th>Huevos duros</th>
+        </tr>
+
+        <tr>
+            <th>1 cucharadita</th>
+            <th>Almidón de maizn disuelto en caldo</th>
+        </tr>
+
+    </table>
+    
+    <h3>Elaboración:</h3>
+
+    <ul>
+        <li>Saltar la cebolla, salar para que sude y quede transparante la cebolla.</li>
+        <br>
+        <li>Agregar la carne, mezclar continuamente hasta que cambie de color.</li>
+        <br>
+        <li>Añadir el almidón disuelto en caldo.</li>
+        <br>
+        <li>Retirar del fuego, poner la cebolla de verdeo y condimentar.</li>
+        <br>
+        <li>Cambiar a un fuente y dejar enfriar.</li>
+        <br>
+        <li>Pelar los huevos y picarlos, agregar al relleno y mezclar todo.</li>
+        <br>
+        <li>Opcional, se puede agregar aceitunas picadas.</li>
+    </ul>
+    
+</body>
+</html>

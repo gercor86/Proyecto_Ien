@@ -1,0 +1,192 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <title>Pan de leche y Miguelitos</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class = "centrar">Pan de leche y Miguelitos</h1>
+
+    <ul class="nav justify-content-cente">  
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'base' %}"><button class = "button3"> Volver Al Inicio</button></a><br>
+        </li>
+        <br>
+        <li><a href="{% url 'vista_receta' %}" ><button class = "button2">Volver a Recetas</button></a> </li>
+    </ul>
+
+    <br>
+
+    <h3>Masa basica para pan de leche y miguelitos</h3>
+
+    <table style = "width:500px;">
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>Esponja</th>
+        </tr>
+
+        <tr>
+            <th>150gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>100cc</th>
+            <th>Leche</th>
+        </tr>
+
+        <tr>
+            <th>15gr</th>
+            <th>Levadura</th>
+        </tr>
+        
+
+        <tr>
+            <th>Amasijo</th>
+        </tr>
+
+        <tr>
+            <th>350gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>5gr</th>
+            <th>Sal</th>
+        </tr>
+
+        <tr>
+            <th>220cc</th>
+            <th>Leche</th>
+        </tr>
+
+        <tr>
+            <th>75gr</th>
+            <th>Azúcar</th>
+        </tr>
+
+        <tr>
+            <th>1 unidad</th>
+            <th>Huevo</th>
+        </tr>
+
+        <tr>
+            <th>1/2 Ralladura</th>
+            <th>De Limon</th>
+        </tr>
+
+        <tr>
+            <th>Cantidad necesaria</th>
+            <th>De escencia de vainilla</th>
+        </tr>
+
+        <tr>
+            <th>50gr</th>
+            <th>Manteca</th>
+        </tr>
+    </table>
+
+    <h3>Elaboración.</h3>
+    <h3>Esponja:</h3>
+    <ul>
+        <li>Amasar la harina con la leche y la levadura.</li>
+        <br>
+        <li>Colocar en bolsa de nailon, dejar fermentar al doble del volumen</li>
+    </ul>
+
+    <h3>Amasijo:</h3>
+    <ul>
+        <li>Hacer una corona con la harina.</li>
+        <br>
+        <li>Mezclar azúcar y liquidos.</li>
+        <br>
+        <li>Amasar bien, Por ultimo agregar la esponja y la manteca</li>
+        <br>
+        <li>Amasar hasta lograr una masa lisa y suave.</li>
+        <br>
+        <li>Darle descanso durante 15 minutos.</li>
+        <br>
+        <br>
+        <li>PAN DE LECHE: hacer bollos de 35gr aproximadamente, dejar <br>
+        levar al doble del volumen, en el centro, colocar crema pastelera <br>
+        y cocinar por espacio de 15 minutos en horno de 180°C, retirar <br>
+        y pincelar con almibar flojo.</li>
+        <br>
+        <br>
+        <li>MIGUELITOS: realizar bollos de 35gr, dejar levar y llevar <br>
+        a horno a 180°C por espacio de 15 minutos una vez frios hacer <br>
+        una incisión con una tijera y rellenar con dulce de leche, <br>
+        decorar con azúcar impalpable.</li>
+    </ul>
+
+    <h3>Receta de la crema pastelera</h3>
+
+    <table style = "width:500px;">
+        <thead>
+            <tr>
+                <th>Gramaje</th>
+                <th>Ingredientes</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>20cc</th>
+            <th>Leche</th>
+        </tr>
+
+        <tr>
+            <th>50gr</th>
+            <th>Azúcar</th>
+        </tr>
+
+        <tr>
+            <th>10gr</th>
+            <th>Almidón de maíz</th>
+        </tr>
+
+        <tr>
+            <th>10gr</th>
+            <th>Harina 000</th>
+        </tr>
+
+        <tr>
+            <th>1 unidad</th>
+            <th>Yema de huevo</th>
+        </tr>
+
+        <tr>
+            <th>Gotas</th>
+            <th>De esencia de vainilla</th>
+        </tr>
+    </table>
+
+    <h3>Procedimiento:</h3>
+
+    <ul>
+        <li>Disolver la harina, y el almidón con un poco de leche, <br>
+        añadir la yema y la esencia de vainilla.</li>
+        <br>
+        <li>Calentar la leche con el azúcar, cuando rompe hervor <br>
+        añadirlo sobre la preparación anterior y volver a fuego <br>
+        hasta que espese, revolver constantemente.</li>
+    </ul>
+
+</body>
+</html>

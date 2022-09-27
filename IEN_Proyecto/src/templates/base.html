@@ -11,12 +11,12 @@
 
 <body>
 
-    <h1 class="centrar">Recetas</h1>
+    <u><h1 class="centrar">Recetas</h1></u>
 
     <ul class="nav flex-column">
 
       
-      <p class=>En esta pagina encontraras una variedad de recetas</p><br>
+      <h3>En esta pagina encontraras una variedad de recetas.</h3>
 
       <hr>
 
@@ -28,12 +28,18 @@
       
       
       <hr>
-      <p>En esta sección vas poder ver la lista de recetas, y tambien vas poder actualizar la receta, con su nombre y tipo.</p>
+      <p>En esta sección se puede actulizar las recetas y tambien eliminarlas.</p>
         <li class="nav-item">
-          <a class="nav-link" href="{% url 'receta_dulce' %}"><button class = "button2">Recetas</button></a><br><br>
+          <a class="nav-link" href="{% url 'receta_dulce' %}"><button class = "button2">Modificar Recetas</button></a><br><br>
         </li>
         
-        
+       <hr>
+       
+       <p>En esta sección vas poder ver la lista de recetas.</p>
+
+       <li class="nav-item">
+        <a class="nav-link" href="{% url 'vista_receta' %}"><button class = "button5">Vistas de  Recetas</button></a><br><br>
+      </li>
     </ul>
 
    
